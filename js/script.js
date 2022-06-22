@@ -29,18 +29,24 @@ function btnGenera() {
         document.getElementById("b").innerHTML = "Biglietto Ridotto (-20%)"
         sconto = prezzoPerKm * 20 / 100;
         prezzoFinale = prezzoPerKm - sconto
-        document.getElementById("c").innerHTML = prezzoFinale.toFixed(2)
+        document.getElementById("c").innerHTML = prezzoFinale.toFixed(2) + "€"
+        document.getElementById("d").innerHTML = "5"
+        document.getElementById("e").innerHTML = "72987"
 
     }else if(eta === "Maggiorenne"){
         document.getElementById("b").innerHTML = "biglietto Standard"
         sconto = prezzoPerKm;
-        prezzoFinale = prezzoPerKm - sconto
-        document.getElementById("c").innerHTML = prezzoFinale
+        prezzoFinale = prezzoPerKm 
+        document.getElementById("c").innerHTML = prezzoFinale.toFixed(2) + "€"
+        document.getElementById("d").innerHTML = "7"
+        document.getElementById("e").innerHTML = "92911"
     }else{
         document.getElementById("b").innerHTML = "biglietto over 65 (-40%)"
         sconto = prezzoPerKm * 40 / 100;
         prezzoFinale = prezzoPerKm - sconto
-        document.getElementById("c").innerHTML = prezzoFinale.toFixed(2)
+        document.getElementById("c").innerHTML = prezzoFinale.toFixed(2) + "€"
+        document.getElementById("d").innerHTML = "2"
+        document.getElementById("e").innerHTML = "82987"
     }
 
 
