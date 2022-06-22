@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* colors */
+.bg-red{
+    min-height: 400px;
+    background-color: rgb(185,20,80);
+}
+.bg-white{
+    background-color: white;
+}
+/* utils */
+
+.maxh250px{
+    max-height: 150px;
+}
