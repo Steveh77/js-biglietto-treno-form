@@ -18,26 +18,31 @@
                         <div class="col-12 d-flex">
                             <div class="col-4 d-flex justify-content-center bg-white ">
                                 <form action="">
-                                    <label for="Nome">Nome e Cognome</label><br>
-                                    <input type="text">
+                                    <label for="Nome" >Nome e Cognome</label><br>
+                                    <input type="text" id="nome">
+                                        
                                 </form>
                             </div>
                             <div class="col-4 d-flex justify-content-center bg-white ">
                                 <form action="">
                                     <label for="Nome">km da percorrere</label><br>
-                                    <input type="text">
+                                    <input type="text" id="km">
                                 </form>
                             </div>
                             <div class="col-4 d-flex justify-content-center bg-white ">
                                 <form action="">
                                     <label for="Nome">Fascia d'età</label><br>
-                                    <input type="text">
+                                    <select id="Fascia-età">
+                                        <option>Maggiorenne</option>
+                                        <option>Minorenne</option>
+                                        <option>Over 65</option>
+                                    </select>
                                 </form>
                             </div>
                         </div>
                         <div class="col-12 mt-5 text-center">
                             <div class="col">
-                                <button class="m-3">Genera</button>
+                                <button onclick="btnGenera()" class="m-3" id="btn-genera">Genera</button>
                                 <button class="m-3">Annulla</button>
                             </div>
                         </div>
@@ -51,12 +56,13 @@
                             <div class="col-5 d-flex flex-column bg-white maxh250px">
                                 <div class="offset-1 col-10">
                                     <h6>NOME PASSEGGERO</h6>
-                                    <h6></h6>
+                                    <h6 id="a"></h6>
                                 </div>
                             </div>
                             <div class="col-7 d-flex justify-content-center bg-white maxh250px">
                                 <div class="col-3">
                                     <h6>Offerta</h6>
+                                    <h6 id="b"></h6>
                                 </div>
                                 <div class="col-3">
                                     <h6>Carrozza</h6>
@@ -66,6 +72,7 @@
                                 </div>
                                 <div class="col-3">
                                     <h6>Costo</h6>
+                                    <h6 id="c"></h6>
                                 </div>
                             </div>    
                         </div>
